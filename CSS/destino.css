@@ -8,9 +8,6 @@
   font-style: normal;
   font-weight: normal; }
 
-th {
-  background-color: #7a7676; }
-
 .colorVerde {
   color: #20cc20; }
 
@@ -33,25 +30,8 @@ th {
   background-size: auto;
   text-transform: uppercase; }
 
-fieldset {
-  background-color: #7a7676;
-  text-align: center; }
-
-table {
-  background-color: #7a7676;
-  border-bottom-color: black;
-  border-top-color: black;
-  border-left-color: black;
-  border-right: black; }
-
 .alineacionDerecha {
   text-align: right; }
-
-a {
-  text-decoration: none; }
-
-li {
-  list-style-type: none; }
 
 .acomodarMiFoto {
   margin: 15px;
@@ -99,26 +79,6 @@ li {
   list-style: none;
   font-size: 0;
   background-color: #04cfad; }
-
-li {
-  display: inline-block;
-  width: 25%;
-  position: relative;
-  font-size: 15px; }
-
-ul {
-  width: 100px;
-  height: 100px; }
-  ul ul {
-    position: absolute;
-    display: none; }
-
-ul ul li {
-  display: block; }
-
-ul li:hover ul {
-  display: block;
-  border: solid; }
 
 .arreglarLogo {
   position: absolute;
@@ -170,11 +130,8 @@ ul li:hover ul {
   animation-duration: 1.5s; }
 
 .main__tituloComentarios {
-  transform: translateX(700px); }
-
-@media only screen and (min-width: 768px) {
-  .html {
-    background-color: white; } }
+  padding-top: 50px;
+  padding-left: 800px; }
 
 .contenedor {
   background-color: #0080C3;
@@ -235,3 +192,30 @@ ul li:hover ul {
 
 .elementofuego {
   background-color: red; }
+
+.agregarFondo {
+  background-color: #1ABC9C; }
+
+.margenAbajo {
+  margin-bottom: 3rem !important;
+  padding-bottom: 1.5rem !important; }
+
+.tamañoImagen {
+  width: 400px;
+  height: 400px; }
+
+@media only screen and (max-width: 768px) {
+  .tamañoImagen {
+    width: 200px;
+    height: 200px; }
+  .areaGrid {
+    display: block; }
+  #flyers {
+    display: block; } }
+
+.cambiarTexto {
+  text-decoration: none;
+  color: white; }
+
+.cambiarTexto:hover {
+  color: white; }

@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LTG Reparaciones</title>
+    <title>LTG Reparaciones Web - Home</title>
+    <meta name="description" content="Pagina Web de LTG Reparaciones, dedicada el mantenimiento de Computadoras, Notebooks y Netbooks.">
+    <meta name="keywords" content="Mantenimiento, LTG Reparaciones, Reparaciones, Computadoras, Notebook, Netbook">
+    <meta property="fb:admins" content="&#123;154447777899861&#125;" />
     <link rel="stylesheet" href="bs_local/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- <link rel="stylesheet" href="CSS/destino.css" /> -->
+    <link rel="stylesheet" href="CSS/destino.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
         <div class="container-fluid">
             <img src="Imagenes/paginaLogo.png" alt="Logo" width="80px">
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
             <div class="collapse navbar-collapse" id="navbarsExample03">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                     <li class="nav-item">
@@ -31,9 +32,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="asociados.html">Asociados</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="entrega.html">Entregra</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Sobre mi/Contacto</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown03">
@@ -41,7 +39,6 @@
                             <li><a class="dropdown-item" href="sobre-mi.html">Sobre mi</a></li>
                         </ul>
                     </li>
-
                 </ul>
                 <a class="navbar-brand header__tituloAnimado textoCentrado" href="index.html">LTG Reparaciones</a>
                 <div class="text-end">
@@ -61,13 +58,13 @@
                 realizados.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 ">Servicios</button>
-                <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 ">Galeria</button>
+                <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 "><a href="#Servicios" class="cambiarTexto">Servicios</a></button>
+                <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 "><a href="#Galeria" class="cambiarTexto">Galeria</a></button>
             </div>
         </div>
     </div>
     <!--Finaliza Texto mitad pagina-->
-    <div class="container col-xxl-8 px-4 py-5 ">
+    <div class="container col-xxl-8 px-4 py-5 " id="Servicios">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
             <div class="col-10 col-sm-8 col-lg-6 ">
                 <img src="Imagenes/LimpiarPC.jpg " class="d-block mx-lg-auto img-fluid " alt="Pc de escritorio" width="700 " height="500 " loading="lazy ">
@@ -76,7 +73,7 @@
                 <h1 class="display-5 fw-bold lh-1 mb-3 ">Servicios</h1>
                 <p class="lead ">Visite nuestro apartado de servicios, donde podra visualizar los distintos tipos de servicios que ofrecemos, precio, entre otros.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
-                    <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 ">Servicios</button>
+                    <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 "><a href="servicios.html" class="cambiarTexto">Servicios</a></button>
                 </div>
             </div>
         </div>
@@ -92,13 +89,28 @@
                     <h1 class="display-5 fw-bold lh-1 mb-3 ">Asociados</h1>
                     <p class="lead ">Por otro lado, puede visitar nuestro apartado de Asociados, donde hay trabajadores del mismo rubro.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
-                        <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 ">Asociados</button>
+                        <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 "><a href="asociados.html" class="cambiarTexto">Asociados</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--Finaliza texto con imagen 2-->
+    <div class="container col-xxl-8 px-4 py-5 " id="Galeria">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
+            <div class="col-10 col-sm-8 col-lg-6 ">
+                <img src="Imagenes/camaraFoto.png " class="d-block mx-lg-auto img-fluid " alt="Camara de fotos" width="400" height="400 " loading="lazy ">
+            </div>
+            <div class="col-lg-6 ">
+                <h1 class="display-5 fw-bold lh-1 mb-3 ">Galeria</h1>
+                <p class="lead ">Visite nuestro apartado de galeria de fotos, aqui encontrata diversos trabajos realizados por LTG Reparaciones.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
+                    <button type="button " class="btn btn-primary btn-lg px-4 me-md-2 "><a href="galeria.html" class="cambiarTexto">Galeria</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Finaliza texto con imagen 3-->
     <h2 class="main__tituloComentarios ">Comentarios:</h2>
     <div class="fb-comments" data-href="https://www.facebook.com/LTG-Reparaciones-101667035646650" data-width="100%" data-numposts="10"></div>
     <!--Finaliza caja de comentarios-->

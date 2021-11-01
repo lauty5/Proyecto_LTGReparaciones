@@ -9,10 +9,6 @@
     font-weight: normal;
 }
 
-th {
-    background-color: rgb(122, 118, 118);
-}
-
 .colorVerde {
     color: rgb(32, 204, 32);
 }
@@ -39,29 +35,8 @@ th {
     text-transform: uppercase;
 }
 
-fieldset {
-    background-color: rgb(122, 118, 118);
-    text-align: center;
-}
-
-table {
-    background-color: rgb(122, 118, 118);
-    border-bottom-color: black;
-    border-top-color: black;
-    border-left-color: black;
-    border-right: black;
-}
-
 .alineacionDerecha {
     text-align: right;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
 }
 
 .acomodarMiFoto {
@@ -115,31 +90,6 @@ li {
     list-style: none;
     font-size: 0;
     background-color: rgb(4, 207, 173);
-}
-
-li {
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 15px;
-}
-
-ul {
-    width: 100px;
-    height: 100px;
-    ul {
-        position: absolute;
-        display: none;
-    }
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display: block;
-    border: solid;
 }
 
 .arreglarLogo {
@@ -201,13 +151,8 @@ ul li:hover ul {
 }
 
 .main__tituloComentarios {
-    transform: translateX(700px);
-}
-
-@media only screen and (min-width:768px) {
-    .html {
-        background-color: white;
-    }
+    padding-top: 50px;
+    padding-left: 800px;
 }
 
 $contenedor:800px;
@@ -261,4 +206,40 @@ $color in $colores {
     .elemento#{$nombres} {
         background-color: $color;
     }
+}
+
+.agregarFondo {
+    background-color: #1ABC9C;
+}
+
+.margenAbajo {
+    margin-bottom: 3rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.tamañoImagen {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width:768px) {
+    .tamañoImagen {
+        width: 200px;
+        height: 200px;
+    }
+    .areaGrid {
+        display: block;
+    }
+    #flyers {
+        display: block;
+    }
+}
+
+.cambiarTexto {
+    text-decoration: none;
+    color: white;
+}
+
+.cambiarTexto:hover {
+    color: white;
 }
