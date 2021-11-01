@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  margin: 0; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("Fuentes/BebasNeue-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+th {
+  background-color: #7a7676; }
+
+.colorVerde {
+  color: #20cc20; }
+
+.colorRojo {
+  color: red; }
+
+.tuConsultaLetra {
+  font-style: italic;
+  line-height: 2, 5; }
+
+#main__textoMitadDePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: #6e6e6e;
+  background-image: url("Imagenes/notebook.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  text-transform: uppercase; }
+
+fieldset {
+  background-color: #7a7676;
+  text-align: center; }
+
+table {
+  background-color: #7a7676;
+  border-bottom-color: black;
+  border-top-color: black;
+  border-left-color: black;
+  border-right: black; }
+
+.alineacionDerecha {
+  text-align: right; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.acomodarMiFoto {
+  margin: 15px;
+  padding-left: 10px;
+  border-radius: 20px; }
+
+.main__boton {
+  border: 5px solid #14c288;
+  /*anchura, estilo y color borde*/
+  padding: 1px;
+  /*espacio alrededor texto*/
+  background-color: #14c288;
+  /*color botón*/
+  color: black;
+  /*color texto*/
+  font-size: 30px;
+  /*Tamaño de letra*/
+  text-decoration: none;
+  /*decoración texto*/
+  text-transform: uppercase;
+  /*capitalización texto*/
+  font-family: 'Bebas Neue', sans-serif;
+  /*tipografía texto*/
+  border-radius: 100px;
+  /*bordes redondos*/
+  margin: 25px;
+  /*Posicion*/ }
+
+.main__menuNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: solid; }
+
+.main__boxNavegacion {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 50px;
+  padding: 10px 10px 10px 10px; }
+
+#main__navegacion {
+  background-color: #04cfad; }
+
+.ulColor {
+  list-style: none;
+  font-size: 0;
+  background-color: #04cfad; }
+
+li {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  font-size: 15px; }
+
+ul {
+  width: 100px;
+  height: 100px; }
+  ul ul {
+    position: absolute;
+    display: none; }
+
+ul ul li {
+  display: block; }
+
+ul li:hover ul {
+  display: block;
+  border: solid; }
+
+.arreglarLogo {
+  position: absolute;
+  top: 3px;
+  left: 15px; }
+
+.header__tituloPrincipal {
+  background-color: #464343;
+  color: #14c288;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  word-spacing: 5px;
+  padding-top: 10px; }
+
+#seccionAsociados {
+  text-align: center; }
+
+#flyers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+#textoFlyers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  font-size: 25px;
+  padding-left: 30px; }
+
+#fotosContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.textoCentrado {
+  text-align: center; }
+
+.areaGrid {
+  display: grid;
+  grid-template-columns: 1000px 100px;
+  justify-items: center; }
+
+.header__tituloAnimado {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: backInDown;
+  animation-duration: 1.5s; }
+
+.main__tituloComentarios {
+  transform: translateX(700px); }
+
+@media only screen and (min-width: 768px) {
+  .html {
+    background-color: white; } }
+
+.contenedor {
+  background-color: #0080C3;
+  display: grid;
+  width: 1660px;
+  height: 600px; }
+
+.socio1 {
+  background-color: #d416cb;
+  width: 100px;
+  height: 100px; }
+
+.socio2 {
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px; }
+
+.socio3 {
+  background-color: #00f870;
+  width: 100px;
+  height: 100px; }
+
+.tamaño-1 {
+  font-size: 30px; }
+
+.tamaño-2 {
+  font-size: 60px; }
+
+.tamaño-3 {
+  font-size: 90px; }
+
+.tamaño-4 {
+  font-size: 120px; }
+
+.gatitocafe {
+  background-image: url("ImagenesPrueba/gatitocafe.jpg");
+  width: 500px;
+  height: 500px; }
+
+.gatitogris {
+  background-image: url("ImagenesPrueba/gatitogris.jpg");
+  width: 500px;
+  height: 500px; }
+
+.gatitotierno {
+  background-image: url("ImagenesPrueba/gatitotierno.jpg");
+  width: 500px;
+  height: 500px; }
+
+.elementosol {
+  background-color: yellow; }
+
+.elementoagua {
+  background-color: blue; }
+
+.elementotierra {
+  background-color: brown; }
+
+.elementofuego {
+  background-color: red; }

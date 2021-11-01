@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('Fuentes/BebasNeue-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+th {
+    background-color: rgb(122, 118, 118);
+}
+
+.colorVerde {
+    color: rgb(32, 204, 32);
+}
+
+.colorRojo {
+    color: red;
+}
+
+.tuConsultaLetra {
+    font-style: italic;
+    line-height: 2, 5;
+}
+
+#main__textoMitadDePagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: rgb(110, 110, 110);
+    background-image: url('Imagenes/notebook.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    text-transform: uppercase;
+}
+
+fieldset {
+    background-color: rgb(122, 118, 118);
+    text-align: center;
+}
+
+table {
+    background-color: rgb(122, 118, 118);
+    border-bottom-color: black;
+    border-top-color: black;
+    border-left-color: black;
+    border-right: black;
+}
+
+.alineacionDerecha {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.acomodarMiFoto {
+    margin: 15px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.main__boton {
+    border: 5px solid rgb(20, 194, 136);
+    /*anchura, estilo y color borde*/
+    padding: 1px;
+    /*espacio alrededor texto*/
+    background-color: rgb(20, 194, 136);
+    /*color botón*/
+    color: black;
+    /*color texto*/
+    font-size: 30px;
+    /*Tamaño de letra*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    font-family: 'Bebas Neue', sans-serif;
+    /*tipografía texto*/
+    border-radius: 100px;
+    /*bordes redondos*/
+    margin: 25px;
+    /*Posicion*/
+}
+
+.main__menuNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid;
+}
+
+.main__boxNavegacion {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+#main__navegacion {
+    background-color: rgb(4, 207, 173);
+}
+
+.ulColor {
+    list-style: none;
+    font-size: 0;
+    background-color: rgb(4, 207, 173);
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 15px;
+}
+
+ul {
+    width: 100px;
+    height: 100px;
+    ul {
+        position: absolute;
+        display: none;
+    }
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    border: solid;
+}
+
+.arreglarLogo {
+    position: absolute;
+    top: 3px;
+    left: 15px;
+}
+
+.header__tituloPrincipal {
+    background-color: rgb(70, 67, 67);
+    color: rgb(20, 194, 136);
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    word-spacing: 5px;
+    padding-top: 10px;
+}
+
+#seccionAsociados {
+    text-align: center;
+}
+
+#flyers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#textoFlyers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+#fotosContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.areaGrid {
+    display: grid;
+    grid-template-columns: 1000px 100px;
+    justify-items: center;
+}
+
+.header__tituloAnimado {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: backInDown;
+    animation-duration: 1.5s;
+}
+
+.main__tituloComentarios {
+    transform: translateX(700px);
+}
+
+@media only screen and (min-width:768px) {
+    .html {
+        background-color: white;
+    }
+}
+
+$contenedor:800px;
+.contenedor {
+    background-color: #0080C3;
+    display: grid;
+    width: $contenedor + 860px;
+    height: $contenedor - 200px;
+}
+
+.socio1 {
+    background-color: #d416cb;
+    width: $contenedor - 700px;
+    height: $contenedor - 700px;
+}
+
+.socio2 {
+    background-color: #ff0000;
+    width: $contenedor - 700px;
+    height: $contenedor - 700px;
+}
+
+.socio3 {
+    background-color: #00f870;
+    width: $contenedor - 700px;
+    height: $contenedor - 700px;
+}
+
+@for $variable from 1 through 4 {
+    .tamaño-#{$variable} {
+        font-size: 30px * $variable;
+    }
+}
+
+@each $gatito in gatitocafe,
+gatitogris,
+gatitotierno {
+    .#{$gatito} {
+        background-image: url("ImagenesPrueba/#{$gatito}.jpg");
+        width: 500px;
+        height: 500px;
+    }
+}
+
+$colores: ( sol: yellow,
+agua: blue,
+tierra: brown,
+fuego: red);
+@each $nombres,
+$color in $colores {
+    .elemento#{$nombres} {
+        background-color: $color;
+    }
+}
