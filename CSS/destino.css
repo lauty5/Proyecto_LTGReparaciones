@@ -211,7 +211,8 @@
   .areaGrid {
     display: block; }
   #flyers {
-    display: block; } }
+    display: block;
+    padding-left: 50px; } }
 
 .cambiarTexto {
   text-decoration: none;
@@ -222,6 +223,5 @@
 
 @media only screen and (max-width: 768px) {
   .main__tituloComentarios {
-    padding-top 25px;
-    padding-left: 100px;
-  }
+    padding-top: 10px;
+    padding-left: 70px; } }
