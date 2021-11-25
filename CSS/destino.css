@@ -211,8 +211,9 @@
   .areaGrid {
     display: block; }
   #flyers {
-    display: block;
-    padding-left: 50px; } }
+    display: grid;
+    gap: 20px;
+    justify-content: center center; } }
 
 .cambiarTexto {
   text-decoration: none;
@@ -225,9 +226,3 @@
   .main__tituloComentarios {
     padding-top: 10px;
     padding-left: 70px; } }
-
-.semaforo {
-  color: green;
-  color: yellow;
-  color: red;
-}

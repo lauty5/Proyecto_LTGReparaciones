@@ -231,8 +231,9 @@ $color in $colores {
         display: block;
     }
     #flyers {
-        display: block;
-        padding-left: 50px;
+        display: grid;
+        gap: 20px;
+        justify-content: center center;
     }
 }
 
